@@ -1,0 +1,18 @@
+Imports System
+Imports System.Linq.Expressions
+
+Module Program
+    Sub Main(args As String())
+        Dim t As Decimal = -0.324
+        Dim x As Decimal
+        x = (Math.Pow(t, 2) - 0.7) / Math.Sin(t)
+        Console.WriteLine(x)
+        Dim a As Decimal = -0.5
+        Dim b As Decimal = 1.3
+        Dim c As Decimal = a * Math.Log(Math.Pow(b * t, 2)) - 2 * x
+        Dim z As Decimal = Math.Pow(t + 1.5, 1 / 3) * a + Math.Pow(b, t) * Math.Pow(Math.E, a * t) - c
+        Console.WriteLine(z)
+
+
+    End Sub
+End Module
